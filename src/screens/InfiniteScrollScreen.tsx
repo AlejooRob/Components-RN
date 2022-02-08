@@ -1,4 +1,4 @@
-import { ActivityIndicator, Image, View } from 'react-native';
+import { ActivityIndicator, View } from 'react-native';
 import React, { useState } from 'react';
 import HeaderTittle from '../components/HeaderTittle';
 import { FlatList } from 'react-native-gesture-handler';

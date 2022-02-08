@@ -40,8 +40,8 @@ const styles = StyleSheet.create({
     container: {
         flexDirection: 'row'
     }, itemText: {
-        marginLeft: 10,
-        fontsize: 19
+        fontSize: 16,
+        marginLeft: 10
     }
 });
 
