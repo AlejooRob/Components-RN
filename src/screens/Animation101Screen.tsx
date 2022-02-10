@@ -1,10 +1,12 @@
 import { View, StyleSheet, Animated, Button } from 'react-native';
-import React from 'react';
+import React, { useContext } from 'react';
 import { useAnimation } from '../hooks/useAnimation';
+import { ThemeContext } from '../context/themeContext/ThemeContext';
 
 const Animation101Screen = () => {
 
   const { opacity, position, fadeIn, fadeOut, starMovingPosition } = useAnimation();
+  const { theme: { colors } } = useContext( ThemeContext );
 
   return (
     <View style={ styles.container }>
@@ -23,10 +25,12 @@ const Animation101Screen = () => {
           fadeIn();
           starMovingPosition( -100 )
         } }
+        color={ colors.primary }
       />
       <Button 
         title="FadeOut"
         onPress={ fadeOut }
+        color={ colors.primary }
       />
     </View>
   );
